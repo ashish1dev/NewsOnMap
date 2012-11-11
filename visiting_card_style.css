@@ -1,0 +1,102 @@
+
+/*Standard Stuff*/
+
+* {
+  margin: 0; padding: 0;
+}
+
+body {
+
+}
+
+.hireme, .hireme:before, .hireme:after {
+  height: 100px;
+  width: 250px;
+  background: #ccc;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+
+  background-image: linear-gradient(bottom, rgb(217,217,217) 40%, rgb(245,245,245) 70%);
+  background-image: -o-linear-gradient(bottom, rgb(217,217,217) 40%, rgb(245,245,245) 70%);
+  background-image: -moz-linear-gradient(bottom, rgb(217,217,217) 40%, rgb(245,245,245) 70%);
+  background-image: -webkit-linear-gradient(bottom, rgb(217,217,217) 40%, rgb(245,245,245) 70%);
+  background-image: -ms-linear-gradient(bottom, rgb(217,217,217) 40%, rgb(245,245,245) 70%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.4, rgb(217,217,217)), color-stop(0.7, rgb(245,245,245)));
+}
+
+/*Hire Me Card*/
+.hireme {
+  margin: 40px;
+  position: relative;
+}
+
+.hireme img {
+  margin: 10px 0 0 10px;
+  border-radius: 10px;
+  height: 80px;
+  width: 80px;
+}
+
+/*
+
+/*Hire Me Text*/
+.hiretext {
+  position: absolute;
+  top: 8px;
+  left: 105px;
+  text-align: center;
+}
+
+.hiretext h3 {
+  font: 20px Helvetica, Verdana, sans-serif;
+  color: #1b83a0;
+}
+
+.hiretext p {
+  font: 12px Helvetica, Verdana, sans-serif;
+  color: #494949;
+}
+
+.hiretext a {
+  border-radius: 5px;
+  border: 1px solid #00adef;
+  color: #fff;
+  background: #01bcf3;
+  padding: 8px 20px;
+
+  font: 15px/3.4 Helvetica, Verdana, sans-serif;
+  text-decoration: none;
+  
+  -webkit-box-shadow: inset 0px 0px 4px rgba(255, 255, 255, 0.5), 1px 1px 2px rgba(0,0,0,0.2);
+  box-shadow: inset 0px 0px 4px rgba(255, 255, 255, 0.5), 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.hiretext a:hover {
+  background: #2ecefd;
+}
+
+/*Hire Me Extra Cards*/
+.hireme:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 4px;
+  z-index: -1;
+  
+  /*Rotate*/
+  -webkit-transform: rotate(4deg) ;
+  -moz-transform: rotate(4deg) ;
+  -o-transform: rotate(4deg) ;
+}
+
+.hireme:before {
+  content: "";
+  position: absolute;
+  top: 0px; left: 10px;
+  z-index: -2;
+  
+  -webkit-transform: rotate(8deg) ;
+  -moz-transform: rotate(8deg) ;
+  -o-transform: rotate(8deg) ;
+}
